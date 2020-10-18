@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create File
-      - run: echo "Repository Checked Out" >> Checkout.text
+        run: echo "Repository Checked Out" >> Checkout.text
 
       - name: Share File Via FileStack
         uses: Warhammer4000/FileStack-Share-Artifact@main # This is the action
@@ -19,5 +19,5 @@ jobs:
               API_KEY: ${{secrets.FILESTACK_API}}
               FILE_PATH: Checkout.text
       - name: Get the output url
-      - run: echo "Download Link is:${{ steps.filestack.File_LINK.time }}"   
+        run: echo "Download Link is:${{ steps.filestack.File_LINK.time }}"   
         
