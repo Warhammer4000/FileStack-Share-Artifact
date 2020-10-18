@@ -1,5 +1,5 @@
 {
-  "name": "sendanywherefileuploadaction",
+  "name": "file-stackshare-artifact",
   "version": "1.0.0",
   "description": "Uploads a file using Send Anywhere API.",
   "main": "dist/index.js",

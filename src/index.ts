@@ -1,8 +1,8 @@
 import * as core from '@actions/core'
 import { uploadFile } from './fileuploader'
 
-const apiKey = `AcEMYpyRyRNSYzUzGlZ5Iz`||core.getInput('API_KEY')
-const filePath = `C:\\Users\\BS_269\\Downloads\\Odin Inspector 3.0.1.unitypackage`||core.getInput('FILE_PATH')
+const apiKey = core.getInput('API_KEY')
+const filePath = core.getInput('FILE_PATH')
 
 
 
