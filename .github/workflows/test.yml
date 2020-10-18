@@ -10,9 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ls -l
+      - run: echo `Repository Checked Out` >> Checkout.text
+
       - uses: Warhammer4000/FileStack-Share-Artifact@main # This is the action
         with:
           API_KEY: ${{secrets.FILESTACK_API}}
-          FILE_PATH: ./README.md 
+          FILE_PATH: Checkout.text
         
