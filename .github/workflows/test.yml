@@ -1,0 +1,17 @@
+name: TestRun
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: https://github.com/Warhammer4000/FileShare-SendAnyWhere@main # This is the action
+        with:
+          API_KEY: ${{secrets.FILESTACK_API}}
+          FILE_PATH: ./README.md 
+        
