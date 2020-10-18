@@ -13,11 +13,11 @@ jobs:
         run: echo "Repository Checked Out" >> Checkout.text
 
       - name: Share File Via FileStack
-        uses: Warhammer4000/FileStack-Share-Artifact@main # This is the action
-        id: filestack
+        uses: Warhammer4000/FileStack-Share-Artifact@main
+        id: filestack # This is needed to get the output in a different action.
         with:
               API_KEY: ${{secrets.FILESTACK_API}}
               FILE_PATH: Checkout.text
       - name: Get the output url
-        run: echo "Download Link is:${{ steps.filestack.File_LINK}}"   
+        run: echo "Download Link is:${{ steps.filestack.outputs.File_LINK}}"   
         
