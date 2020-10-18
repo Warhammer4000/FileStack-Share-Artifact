@@ -6,7 +6,10 @@ inputs:
     required: true
   FILE_PATH:  # id of input
     description: 'File Path'
-    required: true  
+    required: true 
+outputs:
+  File_LINK: # id of output
+    description: 'File Download Link'     
 runs:
   using: 'node12'
   main: 'dist/index.js'

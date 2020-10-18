@@ -13,7 +13,7 @@ async function run() {
 
   try {
     const url=await uploadFile(apiKey, filePath);
-    console.log(url);
+    core.setOutput("File_LINK",url);
     
   } catch (error) {
     core.setFailed(error)

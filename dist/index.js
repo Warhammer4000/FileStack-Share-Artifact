@@ -8346,7 +8346,7 @@ function run() {
                     return [4 /*yield*/, fileuploader_1.uploadFile(apiKey, filePath)];
                 case 1:
                     url = _a.sent();
-                    console.log(url);
+                    core.setOutput("File_LINK", url);
                     return [3 /*break*/, 3];
                 case 2:
                     error_1 = _a.sent();
