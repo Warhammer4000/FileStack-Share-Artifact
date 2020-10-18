@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: tree -L 2
       - uses: Warhammer4000/FileStack-Share-Artifact@main # This is the action
         with:
           API_KEY: ${{secrets.FILESTACK_API}}
