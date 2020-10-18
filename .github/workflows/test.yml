@@ -19,5 +19,5 @@ jobs:
               API_KEY: ${{secrets.FILESTACK_API}}
               FILE_PATH: Checkout.text
       - name: Get the output url
-        run: echo "Download Link is:${{ steps.filestack.File_LINK.time }}"   
+        run: echo "Download Link is:${{ steps.filestack.File_LINK}}"   
         
