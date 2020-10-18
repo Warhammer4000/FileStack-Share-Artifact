@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Warhammer4000/FileShare-SendAnyWhere.git"
+    "url": "git+https://github.com/Warhammer4000/FileStack-Share-Artifact.git"
   },
   "keywords": [
     "SendAnywhere",
@@ -23,9 +23,9 @@
   "author": "Tanimul Haque Khan, Kakan Ghosh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Warhammer4000/FileShare-SendAnyWhere/issues"
+    "url": "https://github.com/Warhammer4000/FileStack-Share-Artifact/issues"
   },
-  "homepage": "https://github.com/Warhammer4000/FileShare-SendAnyWhere#readme",
+  "homepage": "https://github.com/Warhammer4000/FileStack-Share-Artifact#readme",
   "devDependencies": {
     "@types/node": "^14.11.9",
     "@zeit/ncc": "^0.22.3",
