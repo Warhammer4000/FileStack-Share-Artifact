@@ -1,0 +1,12 @@
+name: 'FileStack Share Artifact'
+description: 'Share artifacts via Filestack sharing api'
+inputs:
+  API_KEY:  # id of input
+    description: 'API Key from FileStack API'
+    required: true
+  FILE_PATH:  # id of input
+    description: 'File Path'
+    required: true  
+runs:
+  using: 'node12'
+  main: './dist/index.js'
