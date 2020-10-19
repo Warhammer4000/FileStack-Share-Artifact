@@ -1,5 +1,9 @@
 name: 'FileStack Share Artifact'
+author: 2TakarDeveloper
 description: 'Share artifacts via Filestack sharing api'
+branding:
+  icon: 'upload-cloud'  
+  color: 'green'
 inputs:
   API_KEY:  # id of input
     description: 'API Key from FileStack API'
