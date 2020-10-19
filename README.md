@@ -1,24 +1,17 @@
 # Filestack Share Artifact
-
 This uploads a file to Filestack and outputs the download link.
 
-## Usage
-
-See [action.yml](action.yml)
-
-### Setup
-
-Save the File Stack API KEY as `FILESTACK_API` on your repository Secrets.
-
+# Setup
+1. Get your API Key from here https://www.filestack.com/ [It's Free!]
+2. Save the File Stack API KEY as `FILESTACK_API` on your repository Secrets.
+3. Configure your .yml file with the example bellow
 
 ## Inputs
 
 ### `API_KEY`
-
 **Required** API Key for FileStack API.
 
 ### `FILE_PATH`
-
 **Required** Path of the file to be uploaded.
 
 ## Outputs
@@ -39,3 +32,5 @@ Download link will be saved here
       - name: Get the output url
         run: echo "Download Link is:${{ steps.filestack.outputs.File_LINK}}"    
 ```
+## Sample Use
+* [action.yml](action.yml)
