@@ -2,10 +2,10 @@
   "name": "file-stackshare-artifact",
   "version": "1.0.0",
   "description": "Uploads a file using Send Anywhere API.",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start:dev": "nodemon",
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./dist && rimraf ./build && tsc",
     "package": "ncc build --source-map",
     "start": "npm run build && npm run package && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
