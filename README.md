@@ -1,4 +1,7 @@
 # Filestack Share Artifact
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Warhammer4000/FileStack-Share-Artifact.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Warhammer4000/FileStack-Share-Artifact/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Warhammer4000/FileStack-Share-Artifact.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Warhammer4000/FileStack-Share-Artifact/context:javascript)
+
 This uploads a file to Filestack and outputs the download link.
 
 # Setup
